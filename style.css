@@ -331,3 +331,60 @@ footer a {
     order: 1;
   }
 }
+/* ===== Professional Consulting Services ===== */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.service-card {
+  position: relative;
+  padding: 22px;
+  background: #f8fafc;
+  border: 1px solid #edf0f5;
+  border-radius: 16px;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(16,24,40,.08);
+}
+
+.service-number {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #718096;
+  direction: ltr;
+  margin-bottom: 8px;
+}
+
+.service-card h4 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: #263b62;
+}
+
+.service-card p {
+  margin: 0;
+  color: #697386;
+  font-size: 13px;
+  line-height: 2;
+}
+
+/* Mobile */
+
+@media (max-width: 620px) {
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    padding: 20px;
+  }
+}
