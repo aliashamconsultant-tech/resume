@@ -270,3 +270,64 @@ footer a {
     margin-top: 8px;
   }
 }
+/* ===== Education ===== */
+
+.education-list {
+  display: grid;
+  gap: 0;
+}
+
+.education-item {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 24px;
+  padding: 20px 0;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.education-item:last-child {
+  border-bottom: 0;
+}
+
+.education-year {
+  color: #52627a;
+  font-size: 13px;
+  font-weight: 700;
+  padding-top: 2px;
+}
+
+.education-content strong {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+
+.education-content span {
+  display: block;
+  color: #263b62;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.education-content small {
+  display: block;
+  color: #697386;
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+@media (max-width: 620px) {
+
+  .education-item {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .education-year {
+    order: 0;
+  }
+
+  .education-content {
+    order: 1;
+  }
+}
