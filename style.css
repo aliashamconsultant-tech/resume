@@ -581,3 +581,55 @@ footer a {
   font-size: 11px;
   line-height: 1.8;
 }
+/* ===== Professional Stats ===== */
+
+.stats-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-top: 18px;
+  padding: 24px 28px;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 18px 12px;
+}
+
+.stat-label {
+  display: block;
+  color: #263b62;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.stat-card strong {
+  display: block;
+  color: #263b62;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.4;
+  margin-bottom: 5px;
+}
+
+.stat-card span:not(.stat-label) {
+  display: block;
+  color: #697386;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+/* Mobile */
+
+@media (max-width: 800px) {
+  .stats-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .stats-section {
+    grid-template-columns: 1fr;
+  }
+}
