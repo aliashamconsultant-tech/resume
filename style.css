@@ -970,9 +970,6 @@ footer a {
 }
 
 /* پروژه پنجم در عرض کامل */
-.project-card:last-child {
-  grid-column: 1 / -1;
-}
 
 /* Mobile */
 @media (max-width: 700px) {
