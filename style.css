@@ -1063,6 +1063,10 @@ footer a {
 }
 /* ===== Selected Projects - Portfolio ===== */
 
+/* =========================
+   PROJECTS / PORTFOLIO
+========================= */
+
 .projects-header {
   display: flex;
   align-items: flex-end;
@@ -1160,7 +1164,7 @@ footer a {
 .project-focus span {
   display: inline-block;
   padding: 4px 9px;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #e5eaf0;
   border-radius: 7px;
   color: #52627a;
@@ -1169,13 +1173,11 @@ footer a {
 }
 
 /* پروژه پنجم در عرض کامل */
-
 .project-card:last-child {
   grid-column: 1 / -1;
 }
 
 /* Mobile */
-
 @media (max-width: 700px) {
 
   .projects-list {
@@ -1188,6 +1190,7 @@ footer a {
 
 }
 
+/* Small mobile */
 @media (max-width: 500px) {
 
   .project-card {
