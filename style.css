@@ -211,3 +211,28 @@ footer a {
     justify-content: center;
   }
 }
+/* Professional Highlights */
+
+.professional-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+  margin-left: 135px;
+}
+
+.professional-highlights span {
+  font-size: 12px;
+  padding: 5px 12px;
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 999px;
+  color: rgba(255,255,255,.82);
+  background: rgba(255,255,255,.04);
+}
+
+@media (max-width: 620px) {
+  .professional-highlights {
+    margin-left: 0;
+    justify-content: center;
+  }
+}
