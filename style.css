@@ -978,3 +978,86 @@ footer a {
     border-top: 3px solid #263b62;
   }
 }
+/* ===== Premium Education ===== */
+
+.education-list {
+  display: grid;
+  gap: 0;
+}
+
+.education-item {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 24px;
+  padding: 22px 20px;
+  border-bottom: 1px solid #edf0f5;
+  transition: background .2s ease;
+}
+
+.education-item:first-child {
+  background: #f8fafc;
+  border: 1px solid #edf0f5;
+  border-radius: 16px;
+  margin-bottom: 8px;
+  padding: 24px 20px;
+}
+
+.education-item:last-child {
+  border-bottom: 0;
+}
+
+.education-year {
+  color: #52627a;
+  font-size: 13px;
+  font-weight: 700;
+  padding-top: 4px;
+}
+
+.education-item:first-child .education-year {
+  color: #263b62;
+  font-weight: 800;
+}
+
+.education-content strong {
+  display: block;
+  color: #263b62;
+  font-size: 17px;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.education-content span {
+  display: block;
+  color: #596579;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.education-content small {
+  display: block;
+  color: #697386;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+.education-item:first-child .education-content strong {
+  font-size: 18px;
+}
+
+/* Mobile */
+
+@media (max-width: 620px) {
+
+  .education-item {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .education-item:first-child {
+    padding: 20px;
+  }
+
+  .education-year {
+    padding-top: 0;
+  }
+}
