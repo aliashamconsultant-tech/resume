@@ -586,90 +586,102 @@ footer a {
 ========================= */
 
 .stats-section {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin-top: 18px;
-  background: #ffffff;
-  border-radius: 20px;
-  overflow: hidden;
-  border: 1px solid #edf0f5;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:0;
+  margin:0;
+  padding:0;
+  background:#fff;
+  border-radius:18px;
+  overflow:hidden;
 }
 
 .stat-card {
-  min-height: 145px;
-  padding: 28px 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-left: 1px solid #edf0f5;
+  min-height:145px;
+  padding:28px 18px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  border-left:1px solid #edf0f5;
 }
 
-.stat-card:last-child {
-  border-left: 0;
+.stat-card:nth-child(3) {
+  border-left:0;
+}
+
+.stat-card:nth-child(4),
+.stat-card:nth-child(5) {
+  border-top:1px solid #edf0f5;
 }
 
 .stat-card strong {
-  display: block;
-  color: #263b62;
-  font-size: 28px;
-  font-weight: 800;
-  line-height: 1.2;
-  direction: rtl;
-  margin-bottom: 10px;
+  display:block;
+  color:#263b62;
+  font-size:27px;
+  font-weight:800;
+  line-height:1.2;
+  margin-bottom:9px;
 }
 
 .stat-card span {
-  display: block;
-  color: #697386;
-  font-size: 12px;
-  line-height: 1.9;
-  max-width: 150px;
+  display:block;
+  color:#596579;
+  font-size:12px;
+  font-weight:600;
+  line-height:1.8;
 }
 
-/* Mobile */
-@media (max-width: 800px) {
-
-  .stats-section {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .stat-card:nth-child(2) {
-    border-left: 0;
-  }
-
-  .stat-card:nth-child(3) {
-    border-top: 1px solid #edf0f5;
-  }
-
-  .stat-card:nth-child(4) {
-    border-top: 1px solid #edf0f5;
-  }
-
+.stat-card small {
+  display:block;
+  margin-top:5px;
+  color:#718096;
+  font-size:10px;
+  line-height:1.7;
 }
 
-@media (max-width: 500px) {
-
+@media (max-width:700px) {
   .stats-section {
-    grid-template-columns: 1fr;
+    grid-template-columns:1fr 1fr;
   }
 
   .stat-card {
-    min-height: 110px;
-    border-left: 0;
-    border-bottom: 1px solid #edf0f5;
+    min-height:125px;
+    padding:22px 12px;
   }
 
-  .stat-card:last-child {
-    border-bottom: 0;
+  .stat-card:nth-child(3) {
+    border-left:1px solid #edf0f5;
   }
 
-  .stat-card:nth-child(3),
   .stat-card:nth-child(4) {
-    border-top: 0;
+    border-left:0;
   }
 
+  .stat-card:nth-child(5) {
+    grid-column:1 / -1;
+    border-left:0;
+  }
+}
+
+@media (max-width:500px) {
+  .stats-section {
+    grid-template-columns:1fr;
+  }
+
+  .stat-card,
+  .stat-card:nth-child(3),
+  .stat-card:nth-child(4),
+  .stat-card:nth-child(5) {
+    grid-column:auto;
+    border-left:0;
+    border-top:1px solid #edf0f5;
+  }
+
+  .stat-card:first-child {
+    border-top:0;
+  }
 }
 /* ===== Executive Experience - Premium ===== */
 
