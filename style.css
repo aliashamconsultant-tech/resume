@@ -733,3 +733,144 @@ footer a {
     grid-column: auto;
   }
 }
+/* ===== Premium Executive Stats ===== */
+
+.stats-section {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr;
+  gap: 14px;
+  margin-top: 18px;
+  padding: 18px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(16,24,40,.06);
+}
+
+.stat-card {
+  min-height: 170px;
+  padding: 24px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stat-card:not(:last-child) {
+  border-left: 1px solid #edf0f5;
+}
+
+/* عنوان مدیریت و راهبری */
+
+.stat-label {
+  color: #263b62;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+/* دو شاخص مدیریتی */
+
+.management-card {
+  grid-column: span 1;
+}
+
+.management-stat {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.management-card .management-stat {
+  width: 48%;
+  display: inline-flex;
+  vertical-align: top;
+}
+
+.management-card .management-stat + .management-stat {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.management-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.management-card .stat-label {
+  width: 100%;
+  text-align: center;
+}
+
+.management-stat strong {
+  color: #263b62;
+  font-size: 25px;
+  font-weight: 800;
+  line-height: 1.4;
+  margin-bottom: 5px;
+}
+
+.management-stat span {
+  display: block;
+  color: #697386;
+  font-size: 11px;
+  line-height: 1.8;
+  max-width: 170px;
+}
+
+/* شاخص‌های ۹ و ۱۳ سال */
+
+.stat-card > strong {
+  color: #263b62;
+  font-size: 27px;
+  font-weight: 800;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.stat-card > span {
+  display: block;
+  color: #697386;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+/* موبایل */
+
+@media (max-width: 800px) {
+
+  .stats-section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .management-card {
+    grid-column: 1 / -1;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .stats-section {
+    grid-template-columns: 1fr;
+  }
+
+  .management-card {
+    grid-column: auto;
+  }
+
+  .management-card .management-stat {
+    width: 100%;
+  }
+
+  .management-card .management-stat + .management-stat {
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px solid #edf0f5;
+  }
+
+}
