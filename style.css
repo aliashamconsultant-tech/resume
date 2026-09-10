@@ -587,7 +587,7 @@ footer a {
 
 .stats-section {
   display:grid;
-  grid-template-columns:repeat(3,1fr);
+  grid-template-columns:repeat(6,1fr);
   gap:0;
   margin:0;
   padding:0;
@@ -596,9 +596,25 @@ footer a {
   overflow:hidden;
 }
 
+/* سه کارت ردیف اول */
+.stats-section .stat-card:nth-child(1),
+.stats-section .stat-card:nth-child(2),
+.stats-section .stat-card:nth-child(3) {
+  grid-column:span 2;
+}
+
+/* دو کارت ردیف دوم؛ به صورت متقارن در مرکز */
+.stats-section .stat-card:nth-child(4) {
+  grid-column:2 / span 2;
+}
+
+.stats-section .stat-card:nth-child(5) {
+  grid-column:4 / span 2;
+}
+
 .stat-card {
   min-height:145px;
-  padding:28px 18px;
+  padding:27px 18px;
   display:flex;
   flex-direction:column;
   align-items:center;
@@ -607,7 +623,8 @@ footer a {
   border-left:1px solid #edf0f5;
 }
 
-.stat-card:nth-child(3) {
+.stat-card:nth-child(3),
+.stat-card:nth-child(5) {
   border-left:0;
 }
 
@@ -641,9 +658,23 @@ footer a {
   line-height:1.7;
 }
 
+/* تبلت و موبایل */
 @media (max-width:700px) {
+
   .stats-section {
     grid-template-columns:1fr 1fr;
+  }
+
+  .stats-section .stat-card:nth-child(1),
+  .stats-section .stat-card:nth-child(2),
+  .stats-section .stat-card:nth-child(3),
+  .stats-section .stat-card:nth-child(4),
+  .stats-section .stat-card:nth-child(5) {
+    grid-column:auto;
+  }
+
+  .stats-section .stat-card:nth-child(5) {
+    grid-column:1 / -1;
   }
 
   .stat-card {
@@ -651,30 +682,31 @@ footer a {
     padding:22px 12px;
   }
 
-  .stat-card:nth-child(3) {
-    border-left:1px solid #edf0f5;
+  .stat-card:nth-child(3),
+  .stat-card:nth-child(5) {
+    border-left:0;
   }
 
   .stat-card:nth-child(4) {
-    border-left:0;
-  }
-
-  .stat-card:nth-child(5) {
-    grid-column:1 / -1;
-    border-left:0;
+    border-left:1px solid #edf0f5;
   }
 }
 
+/* موبایل کوچک */
 @media (max-width:500px) {
+
   .stats-section {
     grid-template-columns:1fr;
+  }
+
+  .stats-section .stat-card:nth-child(5) {
+    grid-column:auto;
   }
 
   .stat-card,
   .stat-card:nth-child(3),
   .stat-card:nth-child(4),
   .stat-card:nth-child(5) {
-    grid-column:auto;
     border-left:0;
     border-top:1px solid #edf0f5;
   }
