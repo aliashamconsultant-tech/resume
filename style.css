@@ -552,3 +552,10 @@ footer a {
     grid-template-columns: 1fr;
   }
 }
+.stat-label {
+  display: block;
+  color: #263b62;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
