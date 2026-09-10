@@ -388,3 +388,45 @@ footer a {
     padding: 20px;
   }
 }
+/* ===== Selected Projects ===== */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.project-card {
+  padding: 22px;
+  background: #f8fafc;
+  border: 1px solid #edf0f5;
+  border-radius: 16px;
+}
+
+.project-label {
+  font-size: 10px;
+  letter-spacing: 1.2px;
+  color: #718096;
+  direction: ltr;
+  margin-bottom: 9px;
+}
+
+.project-card h4 {
+  margin: 0 0 8px;
+  color: #263b62;
+  font-size: 16px;
+}
+
+.project-card p {
+  margin: 0;
+  color: #697386;
+  font-size: 13px;
+  line-height: 2;
+}
+
+@media (max-width: 620px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
