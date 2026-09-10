@@ -236,3 +236,37 @@ footer a {
     justify-content: center;
   }
 }
+/* ===== Executive Experience ===== */
+
+.executive-item {
+  align-items: flex-start;
+  padding: 20px 0;
+}
+
+.executive-item strong {
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+.executive-item small {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.executive-item p {
+  margin: 5px 0 0;
+  color: #596579;
+  font-size: 13px;
+  line-height: 2;
+  max-width: 700px;
+}
+
+.executive-item > span {
+  padding-top: 2px;
+}
+
+@media (max-width: 620px) {
+  .executive-item p {
+    margin-top: 8px;
+  }
+}
