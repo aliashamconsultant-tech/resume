@@ -555,7 +555,29 @@ footer a {
 .stat-label {
   display: block;
   color: #263b62;
-  font-size: 13px;
-  font-weight: 700;
+  font-size: 17px;
+  font-weight: 800;
   margin-bottom: 10px;
+}
+.stat-label {
+  display: block;
+  color: #263b62;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.stat-card strong {
+  display: block;
+  font-size: 24px;
+  font-weight: 800;
+  color: #263b62;
+  margin-bottom: 6px;
+}
+
+.stat-card span:not(.stat-label) {
+  display: block;
+  color: #697386;
+  font-size: 11px;
+  line-height: 1.8;
 }
