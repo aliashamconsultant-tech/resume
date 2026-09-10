@@ -874,3 +874,107 @@ footer a {
   }
 
 }
+/* ===== Executive Experience - Premium ===== */
+
+.experience-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.experience-card {
+  padding: 22px 24px;
+  background: #f8fafc;
+  border: 1px solid #edf0f5;
+  border-radius: 16px;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(16,24,40,.07);
+}
+
+.experience-card.featured-experience {
+  background: #f5f8fc;
+  border-right: 3px solid #263b62;
+}
+
+.experience-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.experience-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  color: #718096;
+  direction: ltr;
+  margin-bottom: 7px;
+}
+
+.experience-card h4 {
+  margin: 0 0 3px;
+  color: #263b62;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.experience-org {
+  display: block;
+  color: #697386;
+  font-size: 12px;
+}
+
+.experience-period {
+  flex-shrink: 0;
+  color: #52627a;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  padding-top: 17px;
+}
+
+.experience-card p {
+  margin: 14px 0 0;
+  color: #596579;
+  font-size: 13px;
+  line-height: 2;
+}
+
+.experience-highlight {
+  display: inline-block;
+  margin-top: 13px;
+  padding: 5px 11px;
+  background: #eef2f7;
+  border-radius: 8px;
+  color: #263b62;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* Mobile */
+
+@media (max-width: 620px) {
+
+  .experience-card {
+    padding: 20px;
+  }
+
+  .experience-top {
+    display: block;
+  }
+
+  .experience-period {
+    display: block;
+    padding-top: 7px;
+  }
+
+  .experience-card.featured-experience {
+    border-right: 0;
+    border-top: 3px solid #263b62;
+  }
+}
