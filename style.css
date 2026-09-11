@@ -1104,3 +1104,17 @@ footer a {
     width:100%;
   }
 }
+.contact-card bdi {
+  display: block;
+  direction: ltr;
+  white-space: nowrap;
+  font-size: 12px;
+  color: #263b62;
+  margin: 8px 0 6px;
+}
+
+@media (max-width: 800px) {
+  .contact-card bdi {
+    font-size: 11px;
+  }
+}
